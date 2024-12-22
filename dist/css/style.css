@@ -1,42 +1,62 @@
+/* Selektor universal yang akan mempengaruhi semua elemen di halaman. */
 * {
+  /* Menghilangkan margin dan padding default di semua elemen HTML. */
   margin: 0;
   padding: 0;
+  /* Menyertakan padding dan border dalam ukuran elemen, membuat ukuran elemen lebih mudah dikontrol. */
   box-sizing: border-box;
+  /* Menetapkan font default untuk seluruh halaman menggunakan font 'Poppins'. */
   font-family: 'Poppins', sans-serif;
+  /* Menambahkan efek scroll halus ketika menuju ke bagian halaman lain (misalnya dengan anchor link). */
   scroll-behavior: smooth;
 }
 
 body {
+  /* Memberikan warna latar belakang gelap (#080b0c) untuk seluruh halaman. */
   background-color: #080b0c;
 }
 
 header {
+  /* Kombinasi gradasi gelap (rgba) dan gambar latar. */
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../assets/img/hero-bg.jpg');
+  /* Gambar diperbesar agar mencakup seluruh elemen. */
   background-size: cover;
+  /* Gambar ditempatkan di tengah. */
   background-position: center;
+  /* Tidak mengulang gambar. */
   background-repeat: no-repeat;
+  /* Latar tetap (tidak menggulung saat halaman digeser). */
   background-attachment: fixed;
 }
 
 .container {
+  /* Elemen mengambil 80% dari lebar layar. */
   width: 80%;
+  /* Memposisikan elemen di tengah secara horizontal. */
   margin-inline: auto;
 }
 
 .navbar {
+  /* Memberi jarak vertikal pada konten navbar. */
   padding: 20px 0 20px 0;
+  /* Navbar tetap di atas saat halaman digeser. */
   position: fixed;
+  /* Memastikan navbar mencakup seluruh lebar layar. */
   width: 100%;
+  /* Memberi efek transisi halus untuk perubahan properti. */
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  /* Menjaga elemen ini tetap di atas elemen lain. */
   z-index: 9999;
 }
 
 .navbar.scrolling-active {
+  /* Warna latar berubah saat menggulung. */
   background-color: #0050b3;
+  /* Jarak padding berubah untuk efek visual. */
   padding: 30px 0 30px 0;
 }
 
@@ -86,18 +106,26 @@ header {
 }
 
 .hero {
+  /* Memastikan lebar 100% */
   width: 100%;
+  /* Seksi ini mencakup seluruh tinggi viewport */
   min-height: 100vh;
+  /* Konten diatur secara fleksibel. */
   display: flex;
+  /* Konten vertikal berada di tengah. */
   align-items: center;
   padding-top: 50px;
 }
 
 .hero .box-hero {
+  /* Menggunakan grid untuk tata letak. */
   display: grid;
+  /* Dua kolom dengan lebar yang sama. */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  /* Jarak antar kolom. */
   column-gap: 50px;
+  /* Konten di tengah vertikal dalam grid. */
   align-items: center;
   justify-content: space-between;
 }
@@ -117,13 +145,17 @@ header {
 }
 
 .hero .box-hero .box:nth-child(1) button {
+  /* Ukuran tombol */
   width: 180px;
   height: 50px;
+  /* Warna latar tombol. */
   background-color: #0050b3;
+  /* Membuat teks tebal. */
   font-weight: bold;
   color: white;
   border: none;
   cursor: pointer;
+  /* Membuat sudut tombol melengkung */
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -264,8 +296,10 @@ header {
   -webkit-animation: animasi 2s infinite;
 }
 
+/* Mendefinisikan animasi dalam tiga tahap */
 @keyframes animasi {
   0% {
+    /* Membuat elemen membesar hingga 1.2x ukuran asli lalu kembali ke ukuran semula. */
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -410,10 +444,13 @@ header {
   }
 }
 
+/* Mengatur tampilan untuk layar dengan lebar maksimal 768px. */
 @media screen and (max-width: 768px) {
   .hero .box-hero {
+    /* Mengubah layout menjadi satu kolom. */
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    /* Memberi jarak antar baris. */
     row-gap: 10px;
   }
 

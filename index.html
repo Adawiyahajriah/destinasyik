@@ -39,6 +39,15 @@
             </div>
             <!-- Menu navigasi -->
             <ul class="menu">
+              <select id="searchCategory">
+                <option value="all">All</option>
+                <option value="title">Title</option>
+                <option value="description">Description</option>
+              </select>
+              <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari pantai atau layanan..." />
+                <button id="searchButton"><i class="fa-solid fa-search"></i></button>
+              </div>              
               <!-- Tautan ke bagian Home -->
               <li><a href="#home">Home</a></li>
               <!-- Tautan ke bagian Services -->
@@ -126,6 +135,13 @@
     <div class="pantai" id="pantai">
       <!-- Kontainer untuk membatasi lebar konten -->
       <div class="container">
+        <div class="header-rekomendasi">
+          <h1>Top Rekomendasi Pantai</h1>
+          <p>
+            Pilihan pantai terbaik kami untuk liburan Anda. Nikmati pemandangan, suasana, 
+            dan pengalaman yang tak terlupakan di pantai-pantai berikut!
+          </p>
+        </div>
         <!-- Mengelompokkan elemen-elemen destinasi pantai -->
         <div class="box-pantai">
           <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
@@ -133,9 +149,9 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai1.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 1</h3>
+            <h3>Pantai Indah Ancol</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai di Jakarta dengan suasana santai dan pemandangan matahari terbenam yang indah.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>
@@ -144,9 +160,9 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai2.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 2</h3>
+            <h3>Pantai Tanjung Lesung</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai ini menawarkan pasir putih yang luas dan air laut yang jernih, cocok untuk snorkeling dan menyelam.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>
@@ -155,9 +171,9 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai3.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 3</h3>
+            <h3>Pantai Kuta</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai terkenal di Bali ini menawarkan ombak yang ideal untuk berselancar.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>
@@ -166,9 +182,9 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai4.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 4</h3>
+            <h3>Pantai Parangtritis</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai ini menawarkan keindahan alam dengan pasir hitam yang unik.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>
@@ -177,9 +193,9 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai5.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 5</h3>
+            <h3>Pantai Derawan</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai tropis dengan keindahan alam bawah laut yang luar biasa.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>
@@ -188,9 +204,29 @@
             <!-- Gambar destinasi pantai -->
             <img src="assets/img/pantai6.jpg" alt="" />
             <!-- Nama destinasi -->
-            <h3>Destinasi Pantai 6</h3>
+            <h3>Pantai Labuan Bajo</h3>
             <!-- Deskripsi destinasi -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
+            <p>Pantai eksotis di Labuan Bajo, Nusa Tenggara Timur, terkenal dengan pemandangan bawah laut yang memukau dan suasana yang tenang.</p>
+            <!-- Tombol untuk detail destinasi -->
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <!-- Gambar destinasi pantai -->
+            <img src="assets/img/pantai5.jpg" alt="" />
+            <!-- Nama destinasi -->
+            <h3>Pantai Belitung</h3>
+            <!-- Deskripsi destinasi -->
+            <p>Pantai yang terletak di pulau Belitung, Sumatra, terkenal dengan pasir putih yang lembut dan batu granit besar yang menambah keindahan alamnya.</p>
+            <!-- Tombol untuk detail destinasi -->
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <!-- Gambar destinasi pantai -->
+            <img src="assets/img/pantai5.jpg" alt="" />
+            <!-- Nama destinasi -->
+            <h3>Pantai Karimunjawa</h3>
+            <!-- Deskripsi destinasi -->
+            <p>Pantai yang terletak di Kepulauan Karimunjawa, Jawa Tengah, menawarkan pemandangan laut biru yang jernih, cocok untuk berlibur dan snorkeling.</p>
             <!-- Tombol untuk detail destinasi -->
             <button>Detail</button>
           </div>

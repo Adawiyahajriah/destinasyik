@@ -59,6 +59,31 @@ document.getElementById("searchButton").addEventListener("click", () => {
   });
 });
 
-
+$(document).ready(function () {
+  $('.review-cards').slick({
+    slidesToShow: 3, // Number of slides to show
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Autoplay speed in ms
+    dots: true, // Enable navigation dots
+    arrows: true, // Enable next/prev arrows
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust for medium screens
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600, // Adjust for small screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
 
 

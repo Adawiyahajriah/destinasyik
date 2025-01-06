@@ -1,305 +1,369 @@
 <!DOCTYPE html>
 <html lang="en" id="home">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/style.css" />
-    <title>Destinasyik</title>
-  </head>
-  <body>
-    <!-- Bagian header yang berisi menu navigasi dan elemen hero -->
-    <header>
-      <!-- Bagian navigasi utama -->
-      <div class="navbar">
-        <!-- Kontainer untuk membatasi lebar konten -->
-        <div class="container">
-          <!-- Mengelompokkan elemen-elemen navbar -->
-          <div class="box-navbar">
-            <!-- Logo bagian kiri navbar -->
-            <div class="logo">
-              <!-- Nama brand/logo -->
-              <h1>Destinasyik.</h1>
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="dist/css/style.css" />
+  <title>Destinasyik</title>
+
+  <title>Slick Slider Example</title>
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Bagian header yang berisi menu navigasi dan elemen hero -->
+  <header>
+    <!-- Bagian navigasi utama -->
+    <div class="navbar">
+      <!-- Kontainer untuk membatasi lebar konten -->
+      <div class="container">
+        <!-- Mengelompokkan elemen-elemen navbar -->
+        <div class="box-navbar">
+          <!-- Logo bagian kiri navbar -->
+          <div class="logo">
+            <!-- Nama brand/logo -->
+            <h1>Destinasyik.</h1>
+          </div>
+          <!-- Menu navigasi -->
+          <ul class="menu">
+            <select id="searchCategory">
+              <option value="all">All</option>
+              <option value="title">Title</option>
+              <option value="description">Description</option>
+            </select>
+            <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Cari pantai atau layanan..." />
+              <button id="searchButton"><i class="fa-solid fa-search"></i></button>
             </div>
-            <!-- Menu navigasi -->
-            <ul class="menu">
-              <select id="searchCategory">
-                <option value="all">All</option>
-                <option value="title">Title</option>
-                <option value="description">Description</option>
-              </select>
-              <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Cari pantai atau layanan..." />
-                <button id="searchButton"><i class="fa-solid fa-search"></i></button>
-              </div>              
-              <!-- Tautan ke bagian Home -->
-              <li><a href="#home">Home</a></li>
-              <!-- Tautan ke bagian Services -->
-              <li><a href="#services">Services</a></li>
-              <!-- Tautan ke bagian Pantai -->
-              <li><a href="#pantai">Pantai</a></li>
-              <!-- Tautan ke bagian Daftar, dengan kelas active -->
-              <li class="active"><a href="#daftar">Daftar</a></li>
-            </ul>
-            <!-- Ikon hamburger untuk menu pada tampilan mobile -->
-            <i class="fa-solid fa-bars menu-bar"></i>
-          </div>
-        </div>
-      </div>
-      <!-- Bagian hero, berisi gambar dan teks pengantar -->
-      <div class="hero">
-        <!-- Kontainer untuk membatasi lebar konten -->
-        <div class="container">
-          <!-- Mengelompokkan elemen-elemen hero -->
-          <div class="box-hero">
-            <!-- Kolom kiri dari hero -->
-            <div class="box">
-              <!-- Judul utama hero -->
-              <h1>
-                Pantai Pilihan Terbaik <br />
-                Liburan Bersama Keluarga
-              </h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem?</p>
-              <!-- Tombol untuk aksi selanjutnya -->
-              <button>Selengkapnya</button>
-            </div>
-            <!-- Kolom kanan dari hero -->
-            <div class="box">
-              <!-- Gambar di sebelah kanan -->
-              <img src="assets/img/Hero.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Services -->
-    <!-- Bagian Services dengan ID untuk navigasi -->
-    <div class="services" id="services">
-      <!-- Kontainer untuk membatasi lebar konten -->
-      <div class="container">
-        <!-- Mengelompokkan elemen-elemen services -->
-        <div class="box-services">
-          <!-- Kolom untuk setiap layanan -->
-          <div class="box">
-            <!-- Ikon Font Awesome untuk Harga Terjangkau -->
-            <i class="fa-solid fa-coins"></i>
-            <!-- Judul layanan -->
-            <h4>Harga Terjangkau</h4>
-            <!-- Deskripsi layanan -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-          </div>
-
-          <!-- Kolom layanan kedua -->
-          <div class="box">
-            <!-- Ikon untuk Sudah Tersertifikasi -->
-            <i class="fa-solid fa-certificate"></i>
-            <!-- Judul layanan -->
-            <h4>Sudah Tersertifikasi</h4>
-            <!-- Deskripsi layanan -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-          </div>
-
-          <!-- Kolom layanan ketiga -->
-          <div class="box">
-            <!-- Ikon untuk Aman dan Ramah -->
-            <i class="fa-solid fa-people-roof"></i>
-            <!-- Judul layanan -->
-            <h4>Aman dan Ramah</h4>
-            <!-- Deskripsi layanan -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Services End -->
-
-    <!-- Pantai -->
-    <!-- Bagian Pantai dengan ID untuk navigasi -->
-    <div class="pantai" id="pantai">
-      <!-- Kontainer untuk membatasi lebar konten -->
-      <div class="container">
-        <div class="header-rekomendasi">
-          <h1>Top Rekomendasi Pantai</h1>
-          <p>
-            Pilihan pantai terbaik kami untuk liburan Anda. Nikmati pemandangan, suasana, 
-            dan pengalaman yang tak terlupakan di pantai-pantai berikut!
-          </p>
-        </div>
-        <!-- Mengelompokkan elemen-elemen destinasi pantai -->
-        <div class="box-pantai">
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai1.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Indah Ancol</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai di Jakarta dengan suasana santai dan pemandangan matahari terbenam yang indah.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai2.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Tanjung Lesung</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai ini menawarkan pasir putih yang luas dan air laut yang jernih, cocok untuk snorkeling dan menyelam.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai3.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Kuta</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai terkenal di Bali ini menawarkan ombak yang ideal untuk berselancar.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai4.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Parangtritis</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai ini menawarkan keindahan alam dengan pasir hitam yang unik.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai5.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Derawan</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai tropis dengan keindahan alam bawah laut yang luar biasa.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai6.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Labuan Bajo</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai eksotis di Labuan Bajo, Nusa Tenggara Timur, terkenal dengan pemandangan bawah laut yang memukau dan suasana yang tenang.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai5.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Belitung</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai yang terletak di pulau Belitung, Sumatra, terkenal dengan pasir putih yang lembut dan batu granit besar yang menambah keindahan alamnya.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-          <div class="box">
-            <!-- Gambar destinasi pantai -->
-            <img src="assets/img/pantai5.jpg" alt="" />
-            <!-- Nama destinasi -->
-            <h3>Pantai Karimunjawa</h3>
-            <!-- Deskripsi destinasi -->
-            <p>Pantai yang terletak di Kepulauan Karimunjawa, Jawa Tengah, menawarkan pemandangan laut biru yang jernih, cocok untuk berlibur dan snorkeling.</p>
-            <!-- Tombol untuk detail destinasi -->
-            <button>Detail</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Pantai -->
-
-    <!-- Daftar -->
-    <!-- Bagian Daftar dengan ID untuk navigasi -->
-    <div class="daftar" id="daftar">
-      <!-- Kontainer untuk membatasi lebar konten -->
-      <div class="container">
-        <!-- Mengelompokkan elemen-elemen daftar -->
-        <div class="box-daftar">
-          <!-- Judul bagian Daftar -->
-          <h1>
-            Ingin Berlibur? <br />
-            Segera Daftarkan Keluarga Anda!
-          </h1>
-          <!-- Deskripsi -->
-          <h3>Klik Link di Bawah Ini!</h3>
-          <!-- Tombol untuk menghubungi via Whatsapp -->
-          <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
-          <!-- Tombol untuk menghubungi via Gmail -->
-          <button><i class="fa-regular fa-envelope"></i> Gmail</button>
-          <!-- Tombol untuk mengakses Google Form -->
-          <button><i class="fa-regular fa-clipboard"></i> Google Form</button>
-        </div>
-      </div>
-    </div>
-    <!-- Daftar -->
-
-    <!-- Footer -->
-    <!-- Bagian footer yang berisi informasi tambahan dan navigasi -->
-    <div class="footer">
-      <!-- Kontainer untuk membatasi lebar konten -->
-      <div class="container">
-        <!-- Mengelompokkan elemen-elemen footer -->
-        <div class="box-footer">
-          <!-- Kolom pertama di footer -->
-          <div class="box">
-            <!-- Nama brand di footer -->
-            <h2>Destinasyik.</h2>
-            <!-- Deskripsi footer -->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eius rerum quisquam perspiciatis obcaecati, quasi temporibus aperiam iusto aliquam doloremque.</p>
-          </div>
-
-          <!-- Kolom kedua di footer -->
-          <div class="box">
-            <!-- Judul menu -->
-            <h3>Menu</h3>
             <!-- Tautan ke bagian Home -->
-            <a href="#home">Home</a>
+            <li><a href="#home">Home</a></li>
             <!-- Tautan ke bagian Services -->
-            <a href="#services">Services</a>
+            <li><a href="#services">Services</a></li>
             <!-- Tautan ke bagian Pantai -->
-            <a href="#pantai">Pantai</a>
-            <!-- Tautan ke bagian Daftar -->
-            <a href="#daftar">Daftar</a>
-          </div>
-
-          <!-- Kolom ketiga di footer -->
+            <li><a href="#pantai">Pantai</a></li>
+            <!-- Tautan ke bagian Daftar, dengan kelas active -->
+            <li class="active"><a href="#daftar">Daftar</a></li>
+          </ul>
+          <!-- Ikon hamburger untuk menu pada tampilan mobile -->
+          <i class="fa-solid fa-bars menu-bar"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Bagian hero, berisi gambar dan teks pengantar -->
+    <div class="hero">
+      <!-- Kontainer untuk membatasi lebar konten -->
+      <div class="container">
+        <!-- Mengelompokkan elemen-elemen hero -->
+        <div class="box-hero">
+          <!-- Kolom kiri dari hero -->
           <div class="box">
-            <!-- Hak cipta di footer -->
-            <p>&copy; Copyright by <span>Destinasyik</span> All Rights Reserved 2024, Indonesia</p>
+            <!-- Judul utama hero -->
+            <h1>
+              Pantai Pilihan Terbaik <br />
+              Liburan Bersama Keluarga
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem?</p>
+            <!-- Tombol untuk aksi selanjutnya -->
+            <button>Selengkapnya</button>
+          </div>
+          <!-- Kolom kanan dari hero -->
+          <div class="box">
+            <!-- Gambar di sebelah kanan -->
+            <img src="assets/img/Hero.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
+  </header>
 
-    <!-- Memuat file JavaScript untuk interaktivitas halaman -->
-    <script src="dist/js/script.js"></script>
-  </body>
+  <!-- Services -->
+  <!-- Bagian Services dengan ID untuk navigasi -->
+  <div class="services" id="services">
+    <!-- Kontainer untuk membatasi lebar konten -->
+    <div class="container">
+      <!-- Mengelompokkan elemen-elemen services -->
+      <div class="box-services">
+        <!-- Kolom untuk setiap layanan -->
+        <div class="box">
+          <!-- Ikon Font Awesome untuk Harga Terjangkau -->
+          <i class="fa-solid fa-coins"></i>
+          <!-- Judul layanan -->
+          <h4>Harga Terjangkau</h4>
+          <!-- Deskripsi layanan -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
+        </div>
+
+        <!-- Kolom layanan kedua -->
+        <div class="box">
+          <!-- Ikon untuk Sudah Tersertifikasi -->
+          <i class="fa-solid fa-certificate"></i>
+          <!-- Judul layanan -->
+          <h4>Sudah Tersertifikasi</h4>
+          <!-- Deskripsi layanan -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
+        </div>
+
+        <!-- Kolom layanan ketiga -->
+        <div class="box">
+          <!-- Ikon untuk Aman dan Ramah -->
+          <i class="fa-solid fa-people-roof"></i>
+          <!-- Judul layanan -->
+          <h4>Aman dan Ramah</h4>
+          <!-- Deskripsi layanan -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services End -->
+
+  <!-- Pantai -->
+  <!-- Bagian Pantai dengan ID untuk navigasi -->
+  <div class="pantai" id="pantai">
+    <!-- Kontainer untuk membatasi lebar konten -->
+    <div class="container">
+      <div class="header-rekomendasi">
+        <h1>Top Rekomendasi Pantai</h1>
+        <p>
+          Pilihan pantai terbaik kami untuk liburan Anda. Nikmati pemandangan, suasana,
+          dan pengalaman yang tak terlupakan di pantai-pantai berikut!
+        </p>
+      </div>
+      <!-- Mengelompokkan elemen-elemen destinasi pantai -->
+      <div class="box-pantai">
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai1.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Indah Ancol</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai di Jakarta dengan suasana santai dan pemandangan matahari terbenam yang indah.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai2.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Tanjung Lesung</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai ini menawarkan pasir putih yang luas dan air laut yang jernih, cocok untuk snorkeling dan menyelam.
+          </p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai3.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Kuta</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai terkenal di Bali ini menawarkan ombak yang ideal untuk berselancar.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai4.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Parangtritis</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai ini menawarkan keindahan alam dengan pasir hitam yang unik.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai5.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Derawan</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai tropis dengan keindahan alam bawah laut yang luar biasa.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <!-- Setiap box berisi gambar destinasi dan deskripsi singkat -->
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai6.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Labuan Bajo</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai eksotis di Labuan Bajo, Nusa Tenggara Timur, terkenal dengan pemandangan bawah laut yang memukau dan
+            suasana yang tenang.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai5.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Belitung</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai yang terletak di pulau Belitung, Sumatra, terkenal dengan pasir putih yang lembut dan batu granit
+            besar yang menambah keindahan alamnya.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+        <div class="box">
+          <!-- Gambar destinasi pantai -->
+          <img src="assets/img/pantai5.jpg" alt="" />
+          <!-- Nama destinasi -->
+          <h3>Pantai Karimunjawa</h3>
+          <!-- Deskripsi destinasi -->
+          <p>Pantai yang terletak di Kepulauan Karimunjawa, Jawa Tengah, menawarkan pemandangan laut biru yang jernih,
+            cocok untuk berlibur dan snorkeling.</p>
+          <!-- Tombol untuk detail destinasi -->
+          <button>Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pantai -->
+
+  <!-- Daftar -->
+  <!-- Bagian Daftar dengan ID untuk navigasi -->
+  <div class="daftar" id="daftar">
+    <!-- Kontainer untuk membatasi lebar konten -->
+    <div class="container">
+      <!-- Mengelompokkan elemen-elemen daftar -->
+      <div class="box-daftar">
+        <!-- Judul bagian Daftar -->
+        <h1>
+          Ingin Berlibur? <br />
+          Segera Daftarkan Keluarga Anda!
+        </h1>
+        <!-- Deskripsi -->
+        <h3>Klik Link di Bawah Ini!</h3>
+        <!-- Tombol untuk menghubungi via Whatsapp -->
+        <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+        <!-- Tombol untuk menghubungi via Gmail -->
+        <button><i class="fa-regular fa-envelope"></i> Gmail</button>
+        <!-- Tombol untuk mengakses Google Form -->
+        <button><i class="fa-regular fa-clipboard"></i> Google Form</button>
+      </div>
+    </div>
+  </div>
+  <!-- Daftar -->
+
+  <!-- Ulasan -->
+  <section id="reviews" style="text-align: center; padding: 20px 0;">
+    <h2>Reviews</h2>
+  </section>
+
+
+  <!-- Slider Section -->
+  <section id="google-review" style="text-align: center; margin-bottom: 20px;">
+    <h3>Google Review 4.8 ★★★★★</h3>
+  </section>
+
+  <div class="review-cards">
+    <div class="review-card">
+      <p class="review-author">Rani Setiawan</p>
+      <p>"Pelayanan luar biasa! Sangat ramah dan profesional. Pasti akan kembali lagi. Terima kasih!"</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <p class="review-author">Budi Pratama</p>
+      <p>"Pengalaman yang luar biasa! Produk berkualitas tinggi dengan harga yang terjangkau. Sangat puas!"</p>
+      <div class="stars">★★★★☆</div>
+    </div>
+    <div class="review-card">
+      <p class="review-author">Dewi Lestari</p>
+      <p>"Semuanya sempurna, mulai dari pemesanan hingga pengiriman. Sangat direkomendasikan!"</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <p class="review-author">Andi Firmansyah</p>
+      <p>"Tempat ini luar biasa! Stafnya ramah, suasana nyaman, dan pelayanannya cepat. Lima bintang!"</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <p class="review-author">Siti Nurhaliza</p>
+      <p>"Saya sangat senang dengan layanan yang diberikan. sangat peduli kebutuhan pelanggan."</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <p class="review-author">Rahmat Hidayat</p>
+      <p>"Produk sesuai deskripsi, kualitas top, dan pengiriman sangat cepat. Tidak ada keluhan sama sekali!"</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <!-- Tambahkan lebih banyak review-card jika perlu -->
+  </div>
+
+  <!-- Slick Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <!-- Bagian footer yang berisi informasi tambahan dan navigasi -->
+  <div class="footer">
+    <!-- Kontainer untuk membatasi lebar konten -->
+    <div class="container">
+      <!-- Mengelompokkan elemen-elemen footer -->
+      <div class="box-footer">
+        <!-- Kolom pertama di footer -->
+        <div class="box">
+          <!-- Nama brand di footer -->
+          <h2>Destinasyik.</h2>
+          <!-- Deskripsi footer -->
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eius rerum quisquam perspiciatis
+            obcaecati, quasi temporibus aperiam iusto aliquam doloremque.</p>
+        </div>
+
+        <!-- Kolom kedua di footer -->
+        <div class="box">
+          <!-- Judul menu -->
+          <h3>Menu</h3>
+          <!-- Tautan ke bagian Home -->
+          <a href="#home">Home</a>
+          <!-- Tautan ke bagian Services -->
+          <a href="#services">Services</a>
+          <!-- Tautan ke bagian Pantai -->
+          <a href="#pantai">Pantai</a>
+          <!-- Tautan ke bagian Daftar -->
+          <a href="#daftar">Daftar</a>
+        </div>
+
+        <!-- Kolom ketiga di footer -->
+        <div class="box">
+          <!-- Hak cipta di footer -->
+          <p>&copy; Copyright by <span>Destinasyik</span> All Rights Reserved 2024, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+  <!-- Memuat file JavaScript untuk interaktivitas halaman -->
+  <script src="dist/js/script.js"></script>
+</body>
+
 </html>

@@ -613,3 +613,51 @@ body {
     /* Kurangi padding */
   }
 }
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Aktifkan scroll pada modal */
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  margin: 130px auto; /* Tambahkan jarak dari atas */
+  padding: 20px;
+  background: white;
+  width: 90%; /* Sesuaikan ukuran modal */
+  max-width: 600px; /* Batas maksimal lebar modal */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-height: 80vh; /* Batas maksimal tinggi modal */
+  overflow-y: auto; /* Aktifkan scroll di dalam modal */
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

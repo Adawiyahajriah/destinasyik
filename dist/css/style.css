@@ -38,22 +38,18 @@ header {
 
 .navbar {
   /* Memberi jarak vertikal pada konten navbar. */
-  padding: 20px 0 20px 0;
+  padding: 15px 0;
   /* Navbar tetap di atas saat halaman digeser. */
   position: fixed;
   /* Memastikan navbar mencakup seluruh lebar layar. */
   width: 100%;
   /* Memberi efek transisi halus untuk perubahan properti. */
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  /* Menjaga elemen ini tetap di atas elemen lain. */
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
 }
 
 .logo {
@@ -76,7 +72,7 @@ header {
   /* Warna latar berubah saat menggulung. */
   background-color: #344CB7;
   /* Jarak padding berubah untuk efek visual. */
-  padding: 30px 0 30px 0;
+  padding: 10px 0;
 }
 
 .navbar .box-navbar {
@@ -102,7 +98,7 @@ header {
 .navbar .box-navbar .menu li a {
   text-decoration: none;
   color: white;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
 }
 
 .navbar .box-navbar .menu .active a {
@@ -649,7 +645,7 @@ body {
 /* Modal content */
 .modal-content {
   position: relative;
-  margin: 130px auto; /* Tambahkan jarak dari atas */
+  margin: 150px auto; /* Tambahkan jarak dari atas */
   padding: 20px;
   background: white;
   width: 90%; /* Sesuaikan ukuran modal */
